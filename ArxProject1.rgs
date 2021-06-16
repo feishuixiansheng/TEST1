@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'ArxProject1'
+		'dpfArxProject1.arx'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

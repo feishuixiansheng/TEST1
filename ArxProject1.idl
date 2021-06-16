@@ -1,0 +1,33 @@
+// (C) Copyright 2002-2012 by Autodesk, Inc. 
+
+// ArxProject1.idl : IDL source
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (dpfArxProject1.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+//import "acadi.idl";
+
+[
+	uuid(4D76436C-77BE-4AFC-A608-D108B4ECE9B1),
+	version(1.0),
+	helpstring("dpfArxProject1 1.0 Type Library")
+]
+library dpfArxProject1Lib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	//----- If the following import fails then it means that the type library 
+	//----- is not on the system path you can fix the problem in two ways:
+	//----- 1. Add it to the system wide PATH environment variable
+	//----- 2. Add it to the executable file list in Developer Studio. You can do
+	//----- this in using the Tools/Option menu and then choosing the 'Directories'
+	//----- tab and finally typing the full path at the Executable files section.
+
+	//----- Importing english is ok here. Autodesk doesn't localize this idl/tlb.
+	//----- axdb16enu.tlb is guaranteed to be available in all locales.
+	//----- If you want to provide localized typelib then you must import
+	//----- localized tlb here.
+	importlib("axdb19enu.tlb");
+};
